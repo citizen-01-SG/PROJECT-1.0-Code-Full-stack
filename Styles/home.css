@@ -1,7 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace';
+  font-family: "Reddit Mono", monospace;
+}
+
+html, body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  padding: 5px 0 5px 0;
+  display: flex;
+  align-items: center;
+  background-color: #F0EBE0 ;
+  position: relative;
+  justify-content: space-around;
+}
+
+.project-logo{
+  height: auto;
+  width: 150px;
+}
+
+.project-logo img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+/*Bar-View Image*/
+.bar-view-image {
+  width: 100%;
+}
+
+.bar-view-image img{
+  object-fit: cover;
+  width: inherit;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding-right: 40px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+}
+
+.content-container {
+  display: flex;
+}
+
+/*Hover Effects*/
+
+ul li {
+  padding: 0 .5em .25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+
+ul li:hover {
+  color: #fff;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
+  background:black; /* the color */
+  scale: 0 1;
+  transition: .3s, translate 0s .3s;
+}
+ul:hover li:before {
+  scale: 1;
+}
+ul li:hover:before {
+  translate: 0;
+  transition: .3s;
+}
+ul:hover li:has(~ li:hover):before {
+  translate: 100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+ul:hover li:hover ~ li:before {
+  translate: -100% 0;
+  transition: .2s .2s,scale 0s .4s;
 }
 
