@@ -8,32 +8,24 @@
   text-decoration: none;
 }
 
+
+
 nav {
   height: 200px;
   padding: 5px 0 5px 0;
   display: flex;
   align-items: center;
-  background-color: #F0EBE0 ;
+  background-color: #F0EBE0;
   justify-content: space-around;
 }
 
- /* nav img {
+nav img {
+  display:flex;
   width: 150px;
-  position: absolute;
   padding: 10px;
   margin: 10px;
   left: 50px;
   align-items: center;
-}   */
-
-nav img {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-nav ul {
-  display: flex;
 }
 
 nav ul li {
@@ -68,11 +60,12 @@ nav ul li a:hover:before {
 }
 
 /*Bar View Image*/
-.BV img{
+.BV img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
+
 /* Image 1 */
 .container-1 {
   display: flex;
@@ -85,9 +78,10 @@ nav ul li a:hover:before {
 .pourover img {
   height: 350px;
   width: 250px;
-  border-radius:5px;
-  margin: 50px ;
+  border-radius: 5px;
+  margin: 50px;
 }
+
 /* Image 2 */
 .container-2 {
   display: flex;
@@ -100,9 +94,10 @@ nav ul li a:hover:before {
 .pourover-2 img {
   height: 350px;
   width: 250px;
-  border-radius:5px;
-  margin: 50px ;
+  border-radius: 5px;
+  margin: 50px;
 }
+
 /* Image 3 */
 .container-3 {
   display: flex;
@@ -115,8 +110,8 @@ nav ul li a:hover:before {
 .pourover-3 img {
   height: 350px;
   width: 250px;
-  border-radius:5px;
-  margin: 50px ;
+  border-radius: 5px;
+  margin: 50px;
 }
 
 
@@ -132,6 +127,6 @@ nav ul li a:hover:before {
 .pourover-4 img {
   height: 350px;
   width: 250px;
-  border-radius:5px;
-  margin: 50px ;
+  border-radius: 5px;
+  margin: 50px;
 }
